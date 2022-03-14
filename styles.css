@@ -75,3 +75,23 @@ nav {
   padding: 16px 30px;
   border-radius: 30px;
 }
+
+.slider {
+  display: block;
+  height: 100px;
+  margin: 0px auto;
+  margin-left: 185px;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
