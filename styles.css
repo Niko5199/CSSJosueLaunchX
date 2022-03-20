@@ -42,7 +42,7 @@ nav {
 }
 
 .Inicio {
-  background-color: aqua;
+  background-color: #143d64;
   color: white;
   padding: 15px;
   border-radius: 50px;
@@ -86,10 +86,11 @@ nav {
 }
 
 .slider {
-  height: 100px;
+  height: 160px;
   margin: 0px auto;
   overflow: hidden;
   position: relative;
+  padding: 30px;
 }
 
 .slider .slide-track {
@@ -102,6 +103,10 @@ nav {
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+.container-text {
+  padding: 40px;
 }
 
 .anuncio {
@@ -126,16 +131,15 @@ nav {
 }
 
 .card {
-  /* background-image: linear-gradient(#2a265fb6, #2a265fb4), url(background.jpg); */
   background-color: white;
   background-size: cover;
   background-position: center;
-  width: 330px;
+  width: 300px;
   color: #375e83;
   margin: 40px auto;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -153,4 +157,194 @@ nav {
 
 .bold {
   font-weight: bold;
+}
+
+.container-description {
+  display: flex;
+  padding: 40px;
+}
+
+.container-description .description-image {
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+.container-description h1 {
+  color: #143d64;
+  font-weight: bold;
+}
+
+.container-description p {
+  line-height: 30px;
+  padding-top: 30px;
+  color: #375e83;
+  font-weight: bold;
+}
+
+.acordeon {
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.acordeon input {
+  display: none;
+}
+
+.acordeon-titulo {
+  display: block;
+  padding-top: 20px;
+  padding-left: 130px;
+  color: #143d64;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0.5px solid rgb(235, 235, 235);
+  height: 50px;
+}
+
+.acordeon-contenido {
+  height: 0px;
+  overflow: hidden;
+  margin: 0px;
+  transition: all 0.5s;
+}
+
+.acordeon input:checked ~ .acordeon-contenido {
+  height: auto;
+  margin: 15px 0px;
+}
+
+.container-form {
+  display: flex;
+  padding: 40px;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.description-form {
+  padding: 20px;
+}
+
+.container-form h1 {
+  color: #143d64;
+  font-weight: bold;
+}
+
+.container-form p {
+  line-height: 30px;
+  padding-top: 30px;
+  color: #375e83;
+  font-weight: bold;
+}
+
+.call-text {
+  display: flex;
+}
+
+form {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 45%;
+  margin: 10px;
+  /* border: 1px solid #ccc;   */
+}
+
+.call-text i {
+  padding: 30px;
+  font-size: 50px;
+  line-height: 100px;
+  color: #143d64;
+}
+
+.call-text div {
+  margin-top: 40px;
+}
+
+.call-text .text {
+  padding: 0px;
+}
+
+.call-text .number {
+  padding: 0px;
+}
+
+.item button {
+  display: block;
+  width: 90%;
+  height: 50px;
+  margin-left: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #143d64;
+  background: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+}
+
+.item button:hover {
+  background-color: #143d64;
+  color: #fff;
+}
+
+footer {
+  background-color: #d9e1e9;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  color: #143d64;
+}
+
+.footer .vaccination {
+  display: block;
+  padding: 20px;
+  margin-left: 40px;
+}
+.footer .vaccination h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.footer .vaccination p {
+  line-height: 25px;
+}
+.footer .components {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .component {
+  display: block;
+  padding: 20px;
+  margin-right: 40px;
+}
+
+.footer .component h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.footer .component p {
+  line-height: 35px;
+}
+
+.copyr {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.copyr div {
+  display: flex;
+}
+
+.copyr p {
+  margin-right: 100px;
 }
